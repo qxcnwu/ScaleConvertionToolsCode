@@ -9,21 +9,12 @@ As a critical component of many remote sensing satellites and remote sensing mod
 
 .. code:: python
 
-    from ScaleConvertionTools.SC import read_tiff
-
-    if __name__ == '__main__':
-        tiff_path=r"D:\Transformer\test\dat1.tif"
-        read_tiff(feature_bands=[[0,8],[8,16],[16,24]],save_dir=r"D:\Transformer\test",tiff_path=tiff_path,sen_alt=[9,9,9,9,9,9])
+    ScaleConvertionTools
+    "run this command in cmd line to start ScaleConvertionTools Window"
 
 
 2. Processing uav images
 
 .. code:: python
 
-    from ScaleConvertionTools.SC import read_tiff, read_png
-
-    if __name__ == '__main__':
-        tiff_path = r"D:\Transformer\test\dat1.tif"
-        img_path = r"G:\UAVPICTURRE\13裸土-上东下西-H975m-6m-116.JPG"
-        save_dir = "tmp"
-        read_png(img_path=img_path, save_dir=save_dir, pixel=[2, 4, 8, 10, 20, 30])
+    ScaleConvertionTools.DataProcess.ProcessMain.Process to run ScaleConvertion by InputObject object
